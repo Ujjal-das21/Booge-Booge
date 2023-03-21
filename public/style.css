@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    position: relative;
+    /* background-color: 	#000000;
+    color: #fff; */
+    /* color: #f2f2f2; */
+    /* background-color: 	#000000; */
+    /* background-color: #232f3e; */
+}
+#root{
+    padding: 0;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+}
+#app{
+    height: 87vh;
+    overflow: scroll;
+    border: 1px solid black;
+}
+#brand{
+    color: #f2f2f2;
+}
+.app-heading{
+    border: 1px solid black;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+    font-size: 2.2rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    /* background-color:	#ff9900 ; */
+    color: #146eb4;
+}
+.btn >a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+.btn{
+    background-color:	#232f3e;
+    color: #f2f2f2;
+    font-size: 1rem;
+    letter-spacing: 0.0125rem;
+     --bs-btn-border-color: none;
+     --bs-btn-hover-color: #fff;
+     --bs-btn-hover-bg: #146eb4 ;
+     --bs-btn-hover-border-color: none;
+     --bs-btn-focus-shadow-rgb: 225,83,97;
+     --bs-btn-active-color: #fff;
+     --bs-btn-active-bg:#232f3e;
+     --bs-btn-active-border-color:none;
+     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+     --bs-btn-disabled-color: #fff;
+     --bs-btn-disabled-bg:#ffe0b2;
+     --bs-btn-disabled-border-color:none;
+}

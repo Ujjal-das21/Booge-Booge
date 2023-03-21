@@ -1,0 +1,24 @@
+.navbar{
+    /* background-color: 	#232f3e; */
+    --bs-navbar-color: #f2f2f2;
+    --bs-navbar-active-color:#146eb4;
+   
+}
+.navbar-toggler{
+    --bs-navbar-toggler-border-color:#f2f2f2;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+}
+.bg-body-tertiary {
+    background-color: #232f3e!important;
+}
+.nav-item a{
+   font-size: 1.1rem;
+   letter-spacing: 0.01rem;
+   font-weight: 400;
+}
+#brand{
+    font-size: 1.75rem;
+    font-weight: 900;
+    letter-spacing: 0.025rem;
+    /* color: #ff9900; */
+}

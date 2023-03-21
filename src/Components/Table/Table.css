@@ -1,0 +1,97 @@
+#table-grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+#billTable{
+    font-size: 0.8rem;
+}
+#table-grid > div {
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+    /*demo*/
+    /* box-sizing: border-box; */
+    /* box-shadow: 0 0 0 1px black; */
+    margin-bottom: 1rem;
+   margin-top: 0.75rem;
+}
+#table-grid>div{
+    height: 50%;
+
+}
+#add-button-form{
+    margin-bottom: 1rem;
+}
+.card{
+    --bs-card-bg:#0F79AF;
+    --bs-card-color:#f2f2f2;
+    /* --bs-card-title-color:	#ff9900 ; */
+    --bs-card-title-color:	#232f3e;
+    /* --bs-card-subtitle-color: ; */
+}
+.card-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.01rem;
+}
+.card p{
+    font-size: 1.12rem;
+    letter-spacing: 0.01rem;
+}
+.card button{
+   background-color:	#232f3e;
+   color: #f2f2f2;
+   font-size: 1rem;
+   letter-spacing: 0.0125rem;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: 	#ff9900 ;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 225,83,97;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg:#232f3e;
+    --bs-btn-active-border-color:none;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg:#ffe0b2;
+    --bs-btn-disabled-border-color:none;
+}
+.table>:not(caption)>*>* {
+    padding: 0.25rem 0.25rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: var(--bs-border-width);
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+/* select{
+    overflow: scroll;
+} */
+#order-form{
+   font-size: 1rem;
+   font-weight: 600;
+   letter-spacing: 0.01rem;
+}
+#order-form input{
+    padding:0.094rem 0.188rem ;
+    background-color: 	#232f3e;
+   color: #f2f2f2;
+}
+#food-item-heading{
+    font-size: 1.125rem;
+    font-weight: bold;
+    letter-spacing: 0.012rem;
+}
+.food-add-button{
+    margin: 0.8rem 0 1rem 0;
+   
+}
+#bottom-buttons{
+    margin: 0.8rem 0 2.5rem 0;
+}
+#table-bill{
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #232f3e;
+    color: #f2f2f2;
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    border-radius: 25%;
+    margin-top: 1rem;
+}

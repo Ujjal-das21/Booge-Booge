@@ -1,0 +1,25 @@
+#food-table{
+    font-size: 0.8rem;
+}
+#food-table button{
+   /* width: fit-content; */
+   /* font-size: small; */
+   /* padding: 0.078rem; */
+   margin: 0.04rem;
+}
+#button-action{
+    margin-left: 0.5rem;
+}
+#food-form{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+}
+#food-form input{
+    padding:0.094rem 0.188rem ;
+    background-color: 	#232f3e;
+   color: #f2f2f2;
+}
+#goto-table{
+    margin: 0.8rem 0 2.5rem 0;
+}
