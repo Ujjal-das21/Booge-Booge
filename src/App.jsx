@@ -23,7 +23,7 @@ function App()
     const [tableList,setTableList]=useState([]);
    
     return(<div id="app">
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Navbar></Navbar>
     <Routes>
         <Route path="/" element={<Home></Home>}></Route>
