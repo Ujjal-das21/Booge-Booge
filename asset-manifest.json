@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Booge-Booge/static/css/main.c46854f4.css",
+    "main.js": "/Booge-Booge/static/js/main.f9f57c25.js",
+    "static/media/food.jpg": "/Booge-Booge/static/media/food.a37257431f4fcbd6b1ba.jpg",
+    "static/media/drink.jpg": "/Booge-Booge/static/media/drink.72e967d0022ef4de94a8.jpg",
+    "index.html": "/Booge-Booge/index.html",
+    "main.c46854f4.css.map": "/Booge-Booge/static/css/main.c46854f4.css.map",
+    "main.f9f57c25.js.map": "/Booge-Booge/static/js/main.f9f57c25.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c46854f4.css",
+    "static/js/main.f9f57c25.js"
+  ]
+}
