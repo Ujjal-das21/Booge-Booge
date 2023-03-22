@@ -39,6 +39,7 @@ function Food(props) {
     }
     function delItem(event) {
         const index = event.target.value;
+        console.log(event.target);
         props.setFoodList(prev => {
             return prev.filter(item => {
                 return (item.id !== index)
@@ -48,7 +49,7 @@ function Food(props) {
 
     }
     function updateItem(event) {
-        console.log(event.target.name);
+        console.log(event.target);
         props.setId(event.target.name);
         //    event.preventDefault();
 
@@ -80,8 +81,9 @@ function Food(props) {
                             <td>{item.item}</td>
                             <td>
                                 <div className="row" id="button-action">
-                                  <div className="col">  <button type="button" className="btn" ><Link onClick={updateItem} name={item.id} to={"/food/edit/" + item.id} ><img style={{height:"15px",width:"15px" }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAnUlEQVR4nO3SsQnCUBRA0b+AhQSHsVEnUcRBTOkEFuJIuoHiBCKC/REhQohGJL4UQm73m3vfe/yUOlJKWOCICzbohR0GuVc2bQfOEeLxh8ghauq8JjKPkKuJ5JHyJ6vG0i/kTyapRfmyk//RWR4gw7pG3vyfl8EgXI4ZhqV3v7TJ75Nji2slkkWeZV9Me8MoRFoJnLArNpmGBzrSG+5BPu5S+5Q9QQAAAABJRU5ErkJggg=="/> </Link></button></div>
-                                   <div className="col"> <button type="button" className="btn" onClick={delItem} value={item.id} ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAa0lEQVR4nGNgoAb4//8/0////xX///+v9P//f+P///9v+f///24obQwVVwSpw6Y5+T9xIJmQzbiwIlaboQa0/f//fyYe3IbP3/cJOPn+qObBEmA3CWi+gU9zyP///3dC0zQ6BokH49RMKgAAk6HOSYvYCFcAAAAASUVORK5CYII="/></button></div>
+                                  <div className="col">  <button type="button" className="btn" ><Link onClick={updateItem} name={item.id} to={"/food/edit/" + item.id} ><img name={item.id} style={{height:"15px",width:"15px" }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAnUlEQVR4nO3SsQnCUBRA0b+AhQSHsVEnUcRBTOkEFuJIuoHiBCKC/REhQohGJL4UQm73m3vfe/yUOlJKWOCICzbohR0GuVc2bQfOEeLxh8ghauq8JjKPkKuJ5JHyJ6vG0i/kTyapRfmyk//RWR4gw7pG3vyfl8EgXI4ZhqV3v7TJ75Nji2slkkWeZV9Me8MoRFoJnLArNpmGBzrSG+5BPu5S+5Q9QQAAAABJRU5ErkJggg=="/> </Link></button></div>
+                                   {/* <div className="col"> <button type="button" className="btn"  ><img  onClick={delItem} type="button" value={item.id}  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAa0lEQVR4nGNgoAb4//8/0////xX///+v9P//f+P///9v+f///24obQwVVwSpw6Y5+T9xIJmQzbiwIlaboQa0/f//fyYe3IbP3/cJOPn+qObBEmA3CWi+gU9zyP///3dC0zQ6BokH49RMKgAAk6HOSYvYCFcAAAAASUVORK5CYII="/></button></div> */}
+                                   <div className="col"> <button type="button" className="btn" value={item.id} onClick={delItem} >delete</button></div>
                                 </div>
                             </td>
 
@@ -120,6 +122,7 @@ function Food(props) {
             </form>
         </div>
        <div className="row" id="goto-table">
+        <div className="col"><button type="button" className="btn"><Link to={"../admin"}>Back</Link></button></div>
         <div className="col"> <button type="button" className="btn"><Link to={"/table"}>Go Table</Link></button></div>
        </div>
     </div>);

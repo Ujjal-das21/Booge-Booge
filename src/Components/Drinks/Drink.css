@@ -1,0 +1,27 @@
+#drink-table button{
+    /* width: fit-content; */
+    /* font-size: small; */
+    /* padding: 0.078rem; */
+    margin: 0.04rem;
+ }
+ #drink-form{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+ }
+ #drink-form input{
+    padding:0.094rem 0.188rem ;
+    background-color: 	#232f3e;
+   color: #f2f2f2;
+}
+#drink-edit-form{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+
+}
+#drink-edit-form input{
+    padding:0.094rem 0.188rem ;
+    background-color: 	#232f3e;
+   color: #f2f2f2;
+}

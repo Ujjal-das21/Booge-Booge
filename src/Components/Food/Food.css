@@ -23,3 +23,13 @@
 #goto-table{
     margin: 0.8rem 0 2.5rem 0;
 }
+#food-edit-form{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+}
+#food-edit-form input{
+    padding:0.094rem 0.188rem ;
+    background-color: 	#232f3e;
+   color: #f2f2f2;
+}

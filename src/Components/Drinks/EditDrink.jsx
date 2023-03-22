@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Drink.css"
 import { Link } from "react-router-dom";
 function EditDrink(props) {
     const id=props.drinkId;
@@ -39,20 +40,32 @@ function EditDrink(props) {
         })
         props.setDrinkId("");
     }
-    return (<div>
-        <h1>Edit Drink</h1>
-        <form >
-                <label htmlFor="name">name</label>
-                <input onChange={handleChange} type="text" name="name" value={drink.name}  />
-                <label htmlFor="name">Price</label>
-                <input onChange={handleChange} type="number" name="price" value={drink.price}   />
-                <label htmlFor="name">Category</label>
-               <select onChange={handleChange} name="category" value={drink.category}  >
+    return (<div className="container" id="drink-edit-form">
+        <h1 className="app-heading">Edit Drink</h1>
+        <form className="card container"  >
+            <div className="row">
+            <label htmlFor="name">name</label>
+                <div className="col">  <input onChange={handleChange} type="text" name="name" value={drink.name}  /></div>
+            </div>
+            <div className="row">
+            <label htmlFor="name">Price</label>
+                <div className="col"> <input onChange={handleChange} type="number" name="price" value={drink.price}   /></div>
+            </div>
+            <div className="row">
+            <label htmlFor="name">Category</label>
+                <div className="col">
+                <select onChange={handleChange} name="category" value={drink.category}  >
                 <option value="whiskey">whiskey</option>
                 <option value="rum">rum</option>
                 <option value="beer">beer</option>
                </select> 
-               <button > <Link onClick={handleUpdate}  to="/drink">Update</Link></button>
+                </div>
+            </div>
+               
+               <div className="row" class="food-add-button">
+                <div className="col"><button type="button" className="btn" > <Link onClick={handleUpdate}  to="/drink">Update</Link></button></div>
+               </div>
+             
               
     
             </form>

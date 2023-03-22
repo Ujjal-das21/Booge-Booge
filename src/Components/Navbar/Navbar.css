@@ -16,6 +16,9 @@
    letter-spacing: 0.01rem;
    font-weight: 400;
 }
+.navbar-nav{
+    --bs-nav-link-hover-color:#146eb4;
+}
 #brand{
     font-size: 1.75rem;
     font-weight: 900;

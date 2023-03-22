@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import "./Table.css";
 import uniqid from "uniqid";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function Table(props) {
+    const navigate=useNavigate();
+    const goBack = () => {
+        navigate(-1);
+      };
     const [tableItem, setTableItem] = useState({
 
     })
@@ -80,6 +84,7 @@ function Table(props) {
         <button type="button" class="btn btn-secondary" onClick={createTable}><Link to={"/table"}>Add More</Link></button>
            
         </form>
+        <Link type="button" className="btn back-button"  onClick={goBack} ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nO3YTypFYRjA4TcxwMDMAizAAqyAyECsgwUwYgmyAcqcWAAxZGyC8m9AZiZKj27IdR11ldJ7e58VnF/fOd/3fieilFJKKaWUv4RZ3OAB85ERpvDs031kgwk8+eouMsE4HjsiXrAQWWAMt75bjCwwirOGiOXIAiM4bYhYjywwhMOGiE30RQYYwH5DxA76IwP0Ybsh4qi1SpEFNuRz0Tqo2yPW5HXdHrKqF0ISv1rnmIwuP/ZjDEcm3rbfvYaY3TTb7wcM4qAhZivNgdgxopykHlG6GBpXIhs/j/FLkY2fL1Zz0SNX3cvokZ8PV5EVZt4HtStM//fzlFJKKaWUEr/xCv1K5URiSFSXAAAAAElFTkSuQmCC"/></Link>
     </div>);
 }
 

@@ -1,5 +1,53 @@
-#homepage{
+#homepage {
     border: 2px solid black;
     width: 100vw;
     height: 80vh;
+    background-color: #232f3e;
+    background-color: #000000;
+    background-color: #146eb4;
+    /* background-color: #323232; */
+    color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #86C2DE 0%, #F08E86 100%),
+        url("https://images.unsplash.com/photo-1554679665-f5537f187268?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    background-blend-mode: multiply;
 }
+
+#home-content {
+    margin-top: 5.5rem;
+}
+.big-content{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-align:center;
+    font-weight: 900;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.8rem;
+}
+.medium-content{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    text-align:right;
+    font-weight:500;
+    letter-spacing: 0.05rem;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+.small-content{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    text-align:right;
+}
+#start-button{
+    position: relative;
+    left: 13rem;
+}
+/* font-family: 'Lato', sans-serif;
+font-family: 'McLaren', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
