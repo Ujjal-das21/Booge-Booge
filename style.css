@@ -6,14 +6,15 @@ body{
     max-width: 100vw;
     box-sizing: border-box;
     position: relative;
+    background-color: #609EA2;
     /* background-color: 	#000000;
     color: #fff; */
     /* color: #f2f2f2; */
     /* background-color: 	#000000; */
     /* background-color: #232f3e; */
     font-family: 'Roboto', sans-serif;
-    background-color: #f2f2f2;
-    background-image: linear-gradient(45deg, #f2f2f2 0%, #232f3e 33%, #000000 100%);
+    /* background-color: #f2f2f2;
+    background-image: linear-gradient(45deg, #f2f2f2 0%, #232f3e 33%, #000000 100%); */
 
  
 }
@@ -29,10 +30,11 @@ body{
     width: 100vw;
     max-width: 100vw;
     overflow: scroll;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 #brand{
-    color: #f2f2f2;
+    color: #C92C6D;
+    font-family: 'McLaren', cursive;
 }
 .app-heading{
     /* border: 1px solid black; */
@@ -43,7 +45,7 @@ body{
     font-weight: 900;
     letter-spacing: 0.1rem;
     /* background-color:	#ff9900 ; */
-   color: #f2f2f2;
+   color: #F0EEED;
 }
 .btn >a{
     text-decoration: none;
@@ -69,6 +71,7 @@ body{
 }
 .back-button{
     margin-bottom: 1rem;
+    background-color: #C92C6D;
 }
 .back-button img{
     height: 1.25rem;
@@ -79,9 +82,10 @@ body{
     width: 6.25rem;
     margin: 1rem;
 }
-.table{
-    color: #f2f2f2;
+#create-btn{
+background-color: #C92C6D;
 }
+
 /* font-family: 'Lato', sans-serif;
 font-family: 'McLaren', cursive;
 font-family: 'Montserrat', sans-serif;
